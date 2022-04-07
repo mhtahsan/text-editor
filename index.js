@@ -29,7 +29,7 @@ txtBtn.addEventListener('click', () => {
     const blob = new Blob([content.innerText])
     const dataUrl = URL.createObjectURL(blob)
     a.href = dataUrl
-    a.download = filename.value + ".txt"
+    a.download = filename.value + ".html"
     a.click()
 })
 pdfBtn.addEventListener('click', () => {
